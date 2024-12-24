@@ -46,7 +46,6 @@
         <img src="assets/img/logo.png" alt=""> 
         <h1 class="sitename">GENIUS TUTE</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
@@ -54,10 +53,15 @@
           <li><a href="#features">Products</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li>
+            <!-- WhatsApp Link -->
+            <a href="https://wa.me/+918925579574" target="_blank" class="whatsapp-link">
+              <img src="./assets/img/whatsapp.png" alt="WhatsApp" height="30" width="30" class="whatsapp-icon"> WhatsApp
+            </a>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -65,9 +69,13 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section">
-
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline class="background-video">
+        <source src="./assets/video/about.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
@@ -75,26 +83,25 @@
                 <i class="bi bi-gear-fill me-2"></i>
                 Working for your success
               </div>
-
-              <h1 class="mb-4">
-                 GENIUS TUTE <br>
-                     USP -  <span class="accent-text">Unique selling point</span> <br>
+    
+              <h1 class="mb-4 text-white">
+                GENIUS TUTE <br>
+                USP -  <span class="accent-text">Unique selling point</span> <br>
               </h1>
-
+    
               <p class="mb-4 mb-md-5">
                 Innovative in Education Platform as E-commerce Platform.
               </p>              
             </div>
           </div>
-
+    
           <div class="col-lg-6">
             <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
               <img src="assets/img/books.png" alt="Hero Image" class="img-fluid">
-
             </div>
           </div>
         </div>
-
+    
         <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-3 col-md-6">
             <div class="stat-item">
@@ -141,10 +148,9 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </section><!-- /Hero Section -->
+    
 
     <!-- About Section -->
     <section id="about" class="about section">
@@ -179,7 +185,7 @@
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
             <div class="image-wrapper">
               <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-                <img src="assets/img/aboutbook.png" alt="about" class="img-fluid main-image rounded-4">
+                <img src="assets/img/aboutbg.png" alt="about" class="img-fluid main-image rounded-4">
               </div>
               <div class="experience-badge floating">
                 <p>Innovative in Education Platform as E-commerce Platform</p>
@@ -305,121 +311,53 @@
     <!-- Features Cards Section -->
     <section id="features-cards" class="features-cards section">
 
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-            <div class="feature-box orange">
-              <i class="bi bi-book"></i>
-              <h4>GuideBooks</h4>
-              <p>Through our e-commerce platform</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="feature-box blue">
-              <i class="bi bi-pen"></i>
-              <h4>Handwritten Notes</h4>
-              <p>We provide Handwritten Notes through our e-commerce platform</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="feature-box green">
-              <i class="bi bi-patch-check"></i>
-              <h4>Question Paper</h4>
-              <p>We provide Previous year question Notes through our e-commerce platform</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="feature-box red">
-              <i class="bi bi-shield-check"></i>
-              <h4>Study Materials</h4>
-              <p>We provide all study materials and book through our e-commerce platforms</p>
-            </div>
-          </div><!-- End Feature Borx-->
-
-        </div>
-
+      <style>
+         
+          
+          body::before{
+              position: absolute;
+              width: min(1400px, 90vw);
+              top: 10%;
+              left: 50%;
+              height: 90%;
+              transform: translateX(-50%);
+              content: '';
+              background-image: url(images/bg.png);
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: top center;
+              pointer-events: none;
+          }
+      </style>
+     
+    </section>  
+  </head>
+  <body>
+  
+      <div class="banner">
+          <div class="slider" style="--quantity: 10">
+              <div class="item" style="--position: 1"><img src="assets/img/alpha.jpg" alt=""></div>
+              <div class="item" style="--position: 2"><img src="assets/img/alpha_2.jpg" alt=""></div>
+              <div class="item" style="--position: 3"><img src="assets/img/alpha_3.jpg" alt=""></div>
+              <div class="item" style="--position: 4"><img src="assets/img/alpha_4.jpg" alt=""></div>
+              <div class="item" style="--position: 5"><img src="assets/img/alpha_5.jpg" alt=""></div>
+              <div class="item" style="--position: 6"><img src="assets/img/alpha_6.jpg" alt=""></div>
+              <div class="item" style="--position: 7"><img src="assets/img/alpha_7.jpg" alt=""></div>
+              <div class="item" style="--position: 8"><img src="assets//img/alpha_8.jpg" alt=""></div>
+              <div class="item" style="--position: 9"><img src="assets/img/alpha_9.jpg" alt=""></div>
+              <div class="item" style="--position: 10"><img src="assets/img/alpha_10.jpg" alt=""></div>
+          </div>
+          <div class="content">
+              <h1>
+                 Genius Tute
+              </h1>
+              <div class="model"></div>
+          </div>
       </div>
 
     </section><!-- /Features Cards Section -->
 
-    <!-- Features 2 Section -->
-    <section id="features-2" class="features-2 section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-
-          <div class="col-lg-4">
-
-            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
-              <div class="d-flex align-items-center justify-content-end gap-4">
-                <div class="feature-content">
-                  <h3>Handwritten Notes</h3>
-                  <p>We provide Handwritten Notes through our e-commerce platform</p>
-                </div>
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-pen"></i>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
-              <div class="d-flex align-items-center justify-content-end gap-4">
-                <div class="feature-content">
-                  <h3>GuideBooks</h3>
-                  <p>Through our e-commerce platform</p>
-                </div>
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-book"></i>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-          </div>
-
-          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="phone-mockup text-center">
-              <img src="assets/img/notes.jpg" alt="Phone Mockup" class="img-fluid">
-            </div>
-          </div><!-- End Phone Mockup -->
-
-          <div class="col-lg-4">
-
-            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
-              <div class="d-flex align-items-center gap-4">
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-patch-check"></i>
-                </div>
-                <div class="feature-content">
-                  <h3>PY-Question Papers</h3>
-                  <p>We provide Previous year question Notes through our e-commerce platform</p>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
-              <div class="d-flex align-items-center gap-4">
-                <div class="feature-icon flex-shrink-0">
-                  <i class="bi bi-shield-check"></i>
-                </div>
-                <div class="feature-content">
-                  <h3> All Study Materials</h3>
-                  <p>We provide all study materials and book through our e-commerce platforms</p>
-                </div>
-              </div>
-            </div><!-- End .feature-item -->
-
-          </div>
-        </div>
-
-      </div>
-
-    </section><!-- /Features 2 Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
@@ -653,6 +591,10 @@
                 </div>
                 
                 <div>
+                  <input type="text" name="phone" placeholder="Phone no" required>
+                </div>
+              
+                <div>
                     <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
             
@@ -661,9 +603,7 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 </div>
             
-                <!-- Optional Custom Confirmation / Success Page -->
-                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-            
+                
                 <div>
                     <button type="submit">Submit Form</button>
                 </div>
@@ -714,7 +654,17 @@
           </ul>
         </div>
 
-        
+        <div class="footer-right">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.999365866731!2d80.04034307484137!3d12.971892087343557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f4d07355bab5%3A0xbb6063169c4ed4d9!2sChennai%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1735015835974!5m2!1sen!2sin" 
+            width="100%" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
 
       </div>
     </div>
@@ -730,7 +680,6 @@
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
