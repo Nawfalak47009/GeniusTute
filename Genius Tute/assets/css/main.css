@@ -320,10 +320,12 @@ form .hidden {
     display: flex;
     list-style: none;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
   }
 
   .navmenu li {
     position: relative;
+    font-family: 'Poppins', sans-serif;
   }
 
   .navmenu a,
@@ -415,31 +417,34 @@ form .hidden {
   }
 }
 /* Style the WhatsApp link in the nav */
+/* WhatsApp Link Styles */
+/* WhatsApp Link Styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 .whatsapp-link {
   display: flex;
   align-items: center;
-  color: green; /* Set the text color to green */
-  text-decoration: none;
-  font-size: 18px;
-  
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
 }
 
-.whatsapp-link i {
-  margin-right: 8px;
-  font-size: 20px;
+.whatsapp-link span {
+  background-color: #25d366; /* WhatsApp green for text background */
+  padding: 5px 10px; /* Padding around the text */
+  border-radius: 3px; /* Rounded corners for text background */
+  font-family: 'Poppins', sans-serif; /* Apply Poppins font to text */
 }
 
-.whatsapp-link:hover {
-  color: #25d366; /* WhatsApp green color on hover */
+.whatsapp-icon {
+  margin-right: 5px; /* Space between icon and text */
+  vertical-align: middle; /* Align icon with text */
+  width: 20px; /* Icon width */
+  height: 20px; /* Icon height */
 }
 
-/* If you want to use a custom WhatsApp icon */
-.whatsapp-link i {
-  background-color: green;
-  color: white;
-  border-radius: 50%;
-  padding: 10px;
-}
+
+
 
 
 
@@ -866,7 +871,7 @@ section,
   position: relative;
   padding-top: 160px;
   overflow: hidden; /* Prevent scrollbars */
-  background:url("../video/about.mp4");
+  background:url("../video/about_1.mp4");
 }
 
 /* Gradient overlay */
