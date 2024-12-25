@@ -871,7 +871,7 @@ section,
   position: relative;
   padding-top: 160px;
   overflow: hidden; /* Prevent scrollbars */
-  background:url("../video/about_2.mp4");
+  background:url("../video/about.mp4");
 }
 
 /* Gradient overlay */
